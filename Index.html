@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ZonaDev</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+
+    <div class="logo-box">
+      Z
+    </div>
+
+    <div>
+
+      <h1>ZonaDev</h1>
+
+      <small>
+        Community Platform
+      </small>
+
+    </div>
+
+  </div>
+
+  <div class="online">
+    183 Online
+  </div>
+
+</header>
+
+<nav style="
+display:flex;
+gap:15px;
+padding:20px;
+justify-content:center;
+flex-wrap:wrap;
+">
+
+<a href="index.html" class="btn btn-secondary">
+Início
+</a>
+
+<a href="criarpost.html" class="btn btn-secondary">
+Criar Post
+</a>
+
+<a href="upload.html" class="btn btn-secondary">
+Upload
+</a>
+
+<a href="ajuda.html" class="btn btn-secondary">
+Ajuda
+</a>
+
+<a href="perfil.html" class="btn btn-secondary">
+Perfil
+</a>
+
+<a href="mensagens.html" class="btn btn-secondary">
+Mensagens
+</a>
+
+<a href="admin.html" class="btn btn-secondary">
+Admin
+</a>
+
+</nav>
+
+<section class="hero">
+
+  <div class="hero-left">
+
+    <h2>
+
+      Compartilhe
+
+      <span class="gradient">
+        Projetos
+      </span>
+
+      com o mundo.
+
+    </h2>
+
+    <p>
+
+      Poste APKs, sistemas, projetos,
+      duvidas e converse com uma
+      comunidade inteira de desenvolvedores 
+
+    </p>
+
+    <div class="buttons">
+
+      <button class="btn btn-primary">
+        Começar Agora
+      </button>
+
+      <button class="btn btn-secondary">
+        Explorar
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="login-box">
+
+    <h3>
+      Login
+    </h3>
+
+    <p>
+      Entre na sua conta
+    </p>
+
+    <div class="input-group">
+
+      <label>Email</label>
+
+      <input
+        type="email"
+        placeholder="Digite seu email"
+      >
+
+    </div>
+
+    <div class="input-group">
+
+      <label>Usuário</label>
+
+    <input
+  type="text"
+  id="username"
+  placeholder="Digite seu usuário"
+>
+
+    </div>
+
+    <div class="input-group">
+
+      <label>Senha</label>
+
+      <input
+        type="password"
+        placeholder="Digite sua senha"
+      >
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      style="width:100%;"
+      onclick="register()"
+    >
+      Criar Conta
+    </button>
+
+    <button
+      class="btn btn-secondary"
+      style="width:100%;margin-top:10px;"
+      onclick="login()"
+    >
+      Entrar
+    </button>
+
+  </div>
+
+</section>
+
+<section class="posts">
+
+  <h2 class="section-title">
+    Posts da Comunidade
+  </h2>
+
+  <div id="feedPosts">
+
+  </div>
+
+</section>
+
+<footer>
+
+  © 2026 ZonaDev —
+  Plataforma moderna para desenvolvedores.
+
+</footer>
+
+<script type="module" src="firebase.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

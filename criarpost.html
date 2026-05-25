@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Criar Post - ZonaDev</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+
+    <div class="logo-box">
+      Z
+    </div>
+
+    <div>
+      <h1>ZonaDev</h1>
+      <small>Criar publicação</small>
+    </div>
+
+  </div>
+
+</header>
+
+<section class="hero">
+
+  <div class="login-box" style="width:700px;max-width:100%;">
+
+    <h3>Novo Post</h3>
+
+    <p>
+      Compartilhe algo com a comunidade 🚀
+    </p>
+
+    <div class="input-group">
+
+      <label>
+        Título
+      </label>
+
+      <input
+        type="text"
+        id="titulo"
+        placeholder="Digite o titulo"
+      >
+
+    </div>
+
+    <div class="input-group">
+
+      <label>
+        Categoria
+      </label>
+
+      <input
+        type="text"
+        id="categoria"
+        placeholder="HTML, APK, Firebase..."
+      >
+
+    </div>
+
+    <div class="input-group">
+
+      <label>
+        Descrição
+      </label>
+
+      <input
+        type="text"
+        id="descricao"
+        placeholder="Descreva seu post"
+      >
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      style="width:100%;"
+      onclick="criarPost()"
+    >
+      Publicar
+    </button>
+
+  </div>
+
+</section>
+
+<script type="module" src="firebase.js"></script>
+
+</body>
+</html>
